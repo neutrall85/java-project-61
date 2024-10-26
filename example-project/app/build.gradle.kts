@@ -1,6 +1,7 @@
 plugins {
     id("java")
     application
+    id("checkstyle")
 }
 application {
     mainClass = "hexlet.code.App"
@@ -25,12 +26,3 @@ tasks.test {
 tasks.getByName("run", JavaExec::class) {
     standardInput = System.`in`
 }
-
-plugins {
-    checkstyle
-}
-
-
-
-
-
