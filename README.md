@@ -1,3 +1,5 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/neutrall85/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/neutrall85/java-project-61/actions)
 <a href="https://codeclimate.com/github/neutrall85/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/951e79c4630d7bb3aa75/maintainability" /></a>
+
+ <script src="https://asciinema.org/a/tWLm6N4UkMOpTSkEAMSy5wdry.js" id="asciicast-tWLm6N4UkMOpTSkEAMSy5wdry" async="true"></script>
