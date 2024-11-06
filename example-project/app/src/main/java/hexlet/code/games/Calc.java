@@ -16,8 +16,8 @@ public class Calc {
         int result = 0;
         for (int i = 0; i < 3; i++) {
             Random num = new Random();
-            int firstNumber = num.nextInt(10);
-            int secondNumber = num.nextInt(10);
+            int firstNumber = num.nextInt(11) + 1;
+            int secondNumber = num.nextInt(11) + 1;
             Random operatorChoice = new Random();
             int operator = operatorChoice.nextInt(3);
 
@@ -44,8 +44,8 @@ public class Calc {
             if (answer == result) {
                 System.out.println("Correct!");
             } else {
-                System.out.println("'" + result + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + answer + "'." + "\nLet's try again, ");
+                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was "
+                        + "'" + result + "'." + "\nLet's try again, ");
                 break;
             }
             Engine.congrat();

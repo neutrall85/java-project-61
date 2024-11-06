@@ -11,7 +11,7 @@ public class Even {
         String result = "yes";
         String answer = "";
         for (int i = 0; i < 3; i++) {
-            int question = random.nextInt(100);
+            int question = random.nextInt(100) + 1;
             System.out.println("Question: " + question);
             Scanner scan = new Scanner(System.in);
             System.out.print("Your answer: ");
