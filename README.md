@@ -2,4 +2,6 @@
 [![Actions Status](https://github.com/neutrall85/java-project-61/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/neutrall85/java-project-61/actions)
 <a href="https://codeclimate.com/github/neutrall85/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/951e79c4630d7bb3aa75/maintainability" /></a>
 
- https://asciinema.org/a/tWLm6N4UkMOpTSkEAMSy5wdry
+ Even game: https://asciinema.org/a/tWLm6N4UkMOpTSkEAMSy5wdry
+
+ GCD game: https://asciinema.org/a/wxQNKeGuWR57TjWvjE4u2u0j7
