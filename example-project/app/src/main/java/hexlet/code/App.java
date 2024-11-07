@@ -10,6 +10,7 @@ public class App {
                 1 - Greet
                 2 - Even
                 3 - Calc
+                4 - GCD
                 0 - Exit
                 Your choice\s""");
         int num = scanner.nextInt();
@@ -19,8 +20,10 @@ public class App {
             Cli.greeting();
         } else if (num == 2) {
             Even.even();
-        } else if  (num == 3) {
+        } else if (num == 3) {
             Calc.calc();
+        } else if (num == 4) {
+            Gcd.gcd();
         }
     }
 }

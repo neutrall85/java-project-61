@@ -1,5 +1,4 @@
 package hexlet.code.games;
-//import hexlet.code.Engine;
 import hexlet.code.Engine;
 
 import java.util.Scanner;
@@ -7,19 +6,22 @@ import java.util.Random;
 
 public class Calc {
     public static void calc() {
-        Engine.greeting();
-        System.out.println("What is the result of the expression?");
         Scanner scan = new Scanner(System.in);
-        int count = 0;
         String operatorSwitch;
         int answer;
         int result = 0;
+        Engine.greeting();
+        Random num = new Random();
+        int firstNumber;
+        int secondNumber;
+        Random operatorChoice = new Random();
+        int operator;
+        System.out.println("What is the result of the expression?");
+
         for (int i = 0; i < 3; i++) {
-            Random num = new Random();
-            int firstNumber = num.nextInt(11) + 1;
-            int secondNumber = num.nextInt(11) + 1;
-            Random operatorChoice = new Random();
-            int operator = operatorChoice.nextInt(3);
+            firstNumber = num.nextInt(11) + 1;
+            secondNumber = num.nextInt(11) + 1;
+            operator = operatorChoice.nextInt(3);
 
             switch (operator) {
                 case 0:
@@ -37,8 +39,7 @@ public class Calc {
                 default:
                     operatorSwitch = "";
             }
-            var question = firstNumber + operatorSwitch + secondNumber;
-            System.out.println("Question: " + question);
+            System.out.println("Question: " + firstNumber + operatorSwitch + secondNumber);
             answer = scan.nextInt();
 
             if (answer == result) {
