@@ -6,4 +6,4 @@
 
  GCD game: https://asciinema.org/a/wxQNKeGuWR57TjWvjE4u2u0j7
  
-<a href="https://asciinema.org/a/3JKwjrzcyxvkAjA4L7b9koS6l" target="_blank"><img src="https://asciinema.org/a/bJMOlPe5F4mFLY0Rl6fiJSOp3.svg" /></a>
+<a href="https://asciinema.org/a/3JKwjrzcyxvkAjA4L7b9koS6l" target="_blank"><img src="https://asciinema.org/a/3JKwjrzcyxvkAjA4L7b9koS6l.svg" /></a>
