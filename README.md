@@ -5,3 +5,5 @@
  Even game: https://asciinema.org/a/tWLm6N4UkMOpTSkEAMSy5wdry
 
  GCD game: https://asciinema.org/a/wxQNKeGuWR57TjWvjE4u2u0j7
+
+<script src="https://asciinema.org/a/3JKwjrzcyxvkAjA4L7b9koS6l.js" id="asciicast-3JKwjrzcyxvkAjA4L7b9koS6l" async="true"></script>
