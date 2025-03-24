@@ -10,3 +10,10 @@
 Игроку нужно ответить yes, если число чётное, или no — если нечётное.
 
 ![asciicast](https://asciinema.org/a/jztFjdirOcQYzhg1mCFdNHCmF.svg) https://asciinema.org/a/jztFjdirOcQYzhg1mCFdNHCmF
+
+Игра "Калькулятор".
+
+Игроку демонстрируется случайное математическое выражение, которое нужно вычислить и записать правильный ответ.
+
+![asciicast](https://asciinema.org/a/DRTcBVoJ6Yp15BLtb0HS7RmXr.svg) https://asciinema.org/a/DRTcBVoJ6Yp15BLtb0HS7RmXr
+
