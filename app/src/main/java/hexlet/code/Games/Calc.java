@@ -29,7 +29,7 @@ public class Calc extends Engine {
                 default:
                     operatorSwitch = "";
             }
-            System.out.println("Question: " + firstNumber + operatorSwitch + secondNumber);
+            System.out.println("Question: " + firstNumber + " " + operatorSwitch + " " + secondNumber);
             userAnswer = scan.nextInt();
 
             if (userAnswer == correctResult) {
