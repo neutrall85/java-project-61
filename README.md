@@ -23,3 +23,9 @@
 
 ![asciicast](https://asciinema.org/a/lJVNvbfcBc9O0t53vJGaopcLk.svg) https://asciinema.org/a/lJVNvbfcBc9O0t53vJGaopcLk
 
+Игра "Арифметическая прогрессия". 
+
+Игроку демонстрируется ряд чисел, образующий арифметическую прогрессию. Одно из чисел заменено двумя точками. Игрок должен определить это число.
+
+![asciicast](https://asciinema.org/a/MIyyzZoSwx78OKn1K7fdcBmFK.svg) https://asciinema.org/a/MIyyzZoSwx78OKn1K7fdcBmFK
+
