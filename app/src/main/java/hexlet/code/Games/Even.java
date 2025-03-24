@@ -12,11 +12,13 @@ public class Even extends Engine {
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
             answer = scan.next();
-            if(question % 2 == 0 & answer.equals(result)
+            if (question % 2 == 0 & answer.equals(result)
                     | question % 2 != 0 & answer.equals("no")) {
                 System.out.println("Correct!");
             } else {
-                if(answer.equals("yes")) result = "no";
+                if (answer.equals("yes")) {
+                    result = "no";
+                }
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was "
                         + "'" + result + "'." + "\nLet's try again, ");
                 break;
