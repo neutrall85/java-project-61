@@ -22,17 +22,21 @@ public class Even {
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
             var answer = scan.next();
-            if(question % 2 == 0 & answer.equals(result)
+            if (question % 2 == 0 & answer.equals(result)
                     | question % 2 != 0 & answer.equals("no")) {
                 System.out.println("Correct!");
             } else {
-                if(answer.equals("yes")) result = "no";
+                if (answer.equals("yes")) {
+                    result = "no";
+                }
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was "
                         + "'" + result + "'." + "\nLet's try again, ");
                 break;
             }
             count++;
-            if (count == 3) System.out.println("Congratulation, " + name);
+            if (count == 3) {
+                System.out.println("Congratulation, " + name);
+            }
         }
     }
 }
