@@ -21,6 +21,7 @@ public class App {
                 0 - Exit
                 Your choice\s""");
         int num = scanner.nextInt();
+        System.out.println("Welcome to the Brain Games!");
         if (num == 0) {
             scanner.close();
         } else if (num == 1) {
