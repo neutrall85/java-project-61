@@ -20,7 +20,7 @@ public class Engine {
     protected static int maxValue = 10;
     protected static int[] progression = new int[maxValue];
     public static void greeting() {
-        System.out.print("Welcome to the Brain Games!");
+        System.out.println("Welcome to the Brain Games!");
         Scanner scanner = new Scanner(System.in);
         System.out.print("May I have your name? ");
         name = scanner.next();
