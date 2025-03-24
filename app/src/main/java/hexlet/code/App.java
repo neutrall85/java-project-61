@@ -4,6 +4,7 @@ import hexlet.code.Games.Even;
 import hexlet.code.Games.Calc;
 import hexlet.code.Games.Gcd;
 import hexlet.code.Games.Progression;
+import hexlet.code.Games.Prime;
 
 
 public class App {
@@ -16,6 +17,7 @@ public class App {
                 3 - Calc
                 4 - GCD
                 5 - Progression
+                6 - Prime
                 0 - Exit
                 Your choice\s""");
         int num = scanner.nextInt();
@@ -31,6 +33,8 @@ public class App {
             Gcd.gcd();
         } else if (num == 5) {
             Progression.progression();
+        } else if (num == 6) {
+            Prime.prime();
         }
     }
 }

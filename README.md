@@ -29,3 +29,9 @@
 
 ![asciicast](https://asciinema.org/a/MIyyzZoSwx78OKn1K7fdcBmFK.svg) https://asciinema.org/a/MIyyzZoSwx78OKn1K7fdcBmFK
 
+Игра "Простое ли число?". 
+
+Игроку демонстрируется случайное число. Он должен определить простое это число или нет.
+
+![asciicast](https://asciinema.org/a/Gv3aNDQrBBsyDnV6x9sQ9Pc0B.svg) https://asciinema.org/a/Gv3aNDQrBBsyDnV6x9sQ9Pc0B
+
