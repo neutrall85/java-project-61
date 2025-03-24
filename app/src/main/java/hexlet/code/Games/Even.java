@@ -20,7 +20,7 @@ public class Even extends Engine {
                     result = "no";
                 }
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + result + "'." + "\nLet's try again, ");
+                        + "'" + result + "'." + "\nLet's try again, " + name + "!");
                 break;
             }
             Engine.congrat();

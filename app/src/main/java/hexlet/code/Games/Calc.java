@@ -36,7 +36,7 @@ public class Calc extends Engine {
                 System.out.println("Correct!");
             } else {
                 System.out.println("'" + userAnswer + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + result + "'." + "\nLet's try again, ");
+                        + "'" + result + "'." + "\nLet's try again, " + name + "!");
                 break;
             }
             Engine.congrat();

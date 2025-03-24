@@ -26,7 +26,7 @@ public class Gcd extends Engine {
                 System.out.println("Correct!");
             } else {
                 System.out.println("'" + userAnswer + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + firstNumber + "'." + "\nLet's try again, ");
+                        + "'" + firstNumber + "'." + "\nLet's try again, " + name + "!");
                 break;
             }
             Engine.congrat();

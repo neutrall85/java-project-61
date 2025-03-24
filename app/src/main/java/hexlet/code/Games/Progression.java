@@ -29,7 +29,7 @@ public class Progression extends Engine {
                 System.out.println("Correct!");
             } else {
                 System.out.println("'" + userAnswer + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + progression[index] + "'." + "\nLet's try again, ");
+                        + "'" + progression[index] + "'." + "\nLet's try again, " + name + "!");
                 break;
             }
             Engine.congrat();
