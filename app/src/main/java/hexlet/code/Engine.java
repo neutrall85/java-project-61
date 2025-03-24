@@ -30,7 +30,7 @@ public class Engine {
     public static void congrat() {
         count++;
         if (count == 3) {
-            System.out.println("Congratulation, " + name);
+            System.out.println("Congratulation, " + name + "!");
         }
     }
 }
