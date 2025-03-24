@@ -6,9 +6,9 @@ import hexlet.code.Games.Gcd;
 import hexlet.code.Games.Progression;
 import hexlet.code.Games.Prime;
 
-
 public class App {
     public static void main(String[] args) {
+        System.out.println("Welcome to the Brain Games!");
         Scanner scanner = new Scanner(System.in);
         System.out.print("""
                 Please enter the game number and press Enter.
