@@ -9,4 +9,4 @@
 
 Игроку нужно ответить yes, если число чётное, или no — если нечётное.
 
-[![asciicast](https://asciinema.org/a/jztFjdirOcQYzhg1mCFdNHCmF.svg)] (https://asciinema.org/a/jztFjdirOcQYzhg1mCFdNHCmF)
+![asciicast](https://asciinema.org/a/jztFjdirOcQYzhg1mCFdNHCmF.svg) https://asciinema.org/a/jztFjdirOcQYzhg1mCFdNHCmF
