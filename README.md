@@ -17,3 +17,9 @@
 
 ![asciicast](https://asciinema.org/a/DRTcBVoJ6Yp15BLtb0HS7RmXr.svg) https://asciinema.org/a/DRTcBVoJ6Yp15BLtb0HS7RmXr
 
+Игра "Наибольший общий делитель".
+
+Игроку демонстрируется два случайных числа. Он должен вычислить и ввести наибольший общий делитель этих чисел.
+
+![asciicast](https://asciinema.org/a/lJVNvbfcBc9O0t53vJGaopcLk.svg) https://asciinema.org/a/lJVNvbfcBc9O0t53vJGaopcLk
+
