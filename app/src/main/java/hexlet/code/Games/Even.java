@@ -5,7 +5,7 @@ public class Even extends Engine {
     public static void even() {
 
         Engine.greeting();
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'");
+        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         for (int i = 0; i < 3; i++) {
             question = num.nextInt(19) + 1;
