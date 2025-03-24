@@ -8,7 +8,6 @@ import hexlet.code.Games.Prime;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Brain Games!");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greeting");
@@ -19,6 +18,7 @@ public class App {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         int num = scanner.nextInt();
+        System.out.println("Your choice " + num);
         if (num == 0) {
             scanner.close();
         } else if (num == 1) {
