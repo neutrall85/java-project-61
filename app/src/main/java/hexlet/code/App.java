@@ -1,5 +1,6 @@
 package hexlet.code;
 import java.util.Scanner;
+import hexlet.code.Games.*;
 
 public class App {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class App {
         if (num == 0) {
             scanner.close();
         } else if (num == 1) {
-            Cli.greeting();
+            Engine.greeting();
         } else if (num == 2) {
             Even.even();
         }
