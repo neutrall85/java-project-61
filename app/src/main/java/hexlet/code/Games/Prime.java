@@ -31,7 +31,7 @@ public class Prime {
                 }
                 System.out.println("'" + Engine.answer + "'" + " is wrong answer ;(. Correct answer was "
                         + "'" + Engine.result + "'." + "\nLet's try again, " + Engine.name + "!");
-                break;
+                System.exit(0);
             }
             Engine.congrat();
         }

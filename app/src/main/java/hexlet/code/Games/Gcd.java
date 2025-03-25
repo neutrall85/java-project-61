@@ -27,7 +27,7 @@ public class Gcd {
             } else {
                 System.out.println("'" + Engine.userAnswer + "'" + " is wrong answer ;(. Correct answer was "
                         + "'" + Engine.firstNumber + "'." + "\nLet's try again, " + Engine.name + "!");
-                break;
+                System.exit(0);
             }
             Engine.congrat();
         }
