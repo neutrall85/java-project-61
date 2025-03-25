@@ -29,8 +29,8 @@ public class Calc {
                 default:
                     Engine.operatorSwitch = "";
             }
-            System.out.println("Question: " + Engine.firstNumber + " " +
-                    Engine.operatorSwitch + " " + Engine.secondNumber);
+            System.out.println("Question: " + Engine.firstNumber + " "
+                    + Engine.operatorSwitch + " " + Engine.secondNumber);
             Engine.userAnswer = Engine.scan.nextInt();
 
             if (Engine.userAnswer == Engine.correctResult) {
