@@ -11,10 +11,11 @@ public class Progression {
 
         String[][] questionsAnswers = new String[Engine.rounds][Engine.columns];
         for (int i = 0; i < Engine.rounds; i++) {
-            var index = new Random().nextInt(arrLength);
-            var firstNumber = new Random().nextInt(limit);
+            var rand = new Random();
+            var index = rand.nextInt(arrLength);
+            var firstNumber = rand.nextInt(limit);
             var progression = new int[arrLength];
-            var progressionStep = new Random().nextInt(arrLength);
+            var progressionStep = rand.nextInt(arrLength);
 
             for (int j = 0; j < progression.length; j++) {
                 progression[j] = firstNumber;

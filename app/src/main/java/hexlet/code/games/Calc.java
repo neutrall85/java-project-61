@@ -11,9 +11,10 @@ public class Calc {
         var questionsAnswers = new String[Engine.rounds][Engine.columns];
 
         for (int i = 0; i < Engine.rounds; i++) {
-            var firstNumber = new Random().nextInt(limit);
-            var secondNumber = new Random().nextInt(limit);
-            var operator = new Random().nextInt(operatorLimit);
+            var rand = new Random();
+            var firstNumber = rand.nextInt(limit);
+            var secondNumber = rand.nextInt(limit);
+            var operator = rand.nextInt(operatorLimit);
             questionsAnswers[i] = new String[]{firstNumber + " " + operations[operator]
                     + " " + secondNumber, Integer.toString(calculate(firstNumber, operator, secondNumber))};
         }
