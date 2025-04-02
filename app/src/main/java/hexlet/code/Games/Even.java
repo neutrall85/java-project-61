@@ -1,29 +1,22 @@
 package hexlet.code.Games;
 import hexlet.code.Engine;
+import java.util.Random;
 
 public class Even {
+    public static String yes = "yes";
+    public static String no = "no";
+    public static int limit = 100;
     public static void even() {
-
-        Engine.greeting();
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-
-        for (int i = 0; i < Engine.round; i++) {
-            Engine.question = Engine.num.nextInt(Engine.limit) + 1;
-            System.out.println("Question: " + Engine.question);
-            System.out.print("Your answer: ");
-            Engine.answer = Engine.scan.next();
-            if (Engine.question % 2 == 0 & Engine.answer.equals(Engine.result)
-                    | Engine.question % 2 != 0 & Engine.answer.equals("no")) {
-                System.out.println("Correct!");
+        var questionsAnswers = new String[Engine.rounds][Engine.columns];
+        for (int i = 0; i < Engine.rounds; i++) {
+            var number = new Random().nextInt(limit);
+            if (number % 2 == 0) {
+                questionsAnswers[i] = new String[]{Integer.toString(number), yes};
             } else {
-                if (Engine.answer.equals("yes")) {
-                    Engine.result = "no";
-                }
-                System.out.println("'" + Engine.answer + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + Engine.result + "'." + "\nLet's try again, " + Engine.name + "!");
-                System.exit(0);
+                questionsAnswers[i] = new String[]{Integer.toString(number), no};
             }
-            Engine.congrat();
         }
+        String rules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+        Engine.common(rules, questionsAnswers);
     }
 }

@@ -31,7 +31,7 @@ public class App {
         if (num == CHOICE0) {
             scanner.close();
         } else if (num == CHOICE1) {
-            Engine.greeting();
+            Cli.greeting();
         } else if (num == CHOICE2) {
             Even.even();
         } else if (num == CHOICE3) {
