@@ -6,7 +6,6 @@ public class Engine {
     public static int columns = 2;
 
     public static void common(String rules, String[][] table) {
-        System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
         Scanner scanner = new Scanner(System.in);
         var name = scanner.nextLine();
