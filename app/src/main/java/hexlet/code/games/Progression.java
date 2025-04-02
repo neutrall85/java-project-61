@@ -6,16 +6,16 @@ import java.util.Random;
 public class Progression {
     private static final int ARR_LENGTH = 10;
     private static final int LIMIT = 100;
+    private static final Random RAND = new Random();
 
     public static void progression() {
 
         String[][] questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
         for (int i = 0; i < Engine.ROUNDS; i++) {
-            var rand = new Random();
-            var index = rand.nextInt(ARR_LENGTH);
-            var firstNumber = rand.nextInt(LIMIT);
+            var index = RAND.nextInt(ARR_LENGTH);
+            var firstNumber = RAND.nextInt(LIMIT);
             var progression = new int[ARR_LENGTH];
-            var progressionStep = rand.nextInt(ARR_LENGTH);
+            var progressionStep = RAND.nextInt(ARR_LENGTH);
 
             for (int j = 0; j < progression.length; j++) {
                 progression[j] = firstNumber;

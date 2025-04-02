@@ -4,13 +4,13 @@ import java.util.Random;
 
 public class Gcd {
     private static final int LIMIT = 100;
+    private static final Random RAND = new Random();
 
     public static void gcd() {
         var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
         for (int i = 0; i < Engine.ROUNDS; i++) {
-            var rand = new Random();
-            var firstNumber = rand.nextInt(LIMIT) + 1;
-            var secondNumber = rand.nextInt(LIMIT) + 1;
+            var firstNumber = RAND.nextInt(LIMIT) + 1;
+            var secondNumber = RAND.nextInt(LIMIT) + 1;
             questionsAnswers[i] = new String[]{firstNumber
                     + " " + secondNumber, Integer.toString(findGcd(firstNumber, secondNumber))};
         }

@@ -7,11 +7,12 @@ public class Prime {
     private static final String YES = "yes";
     private static final String NO = "no";
     private static final int LIMIT = 100;
+    private static final Random RAND = new Random();
 
     public static void prime() {
         String[][] questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
         for (int i = 0; i < Engine.ROUNDS; i++) {
-            int number = new Random().nextInt(LIMIT) + 1;
+            int number = RAND.nextInt(LIMIT) + 1;
             if (isPrime(number)) {
                 questionsAnswers[i] = new String[]{Integer.toString(number), NO};
             } else {
