@@ -11,7 +11,7 @@ public class Gcd {
             var rand = new Random();
             var firstNumber = rand.nextInt(limit) + 1;
             var secondNumber = rand.nextInt(limit) + 1;
-            questionsAnswers[i] = new String[]{firstNumber + " "
+            questionsAnswers[i] = new String[]{firstNumber
                     + " " + secondNumber, Integer.toString(findGcd(firstNumber, secondNumber))};
         }
         String rules = "Find the greatest common divisor of given numbers.";
