@@ -3,9 +3,9 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Calc {
-    public static int limit = 10;
-    public static int operatorLimit = 3;
-    private static String[] operations = {"+", "-", "*"};
+    private static final int limit = 10;
+    private static final int operatorLimit = 3;
+    private static final String[] operations = {"+", "-", "*"};
 
     public static void calc() {
         var questionsAnswers = new String[Engine.rounds][Engine.columns];
