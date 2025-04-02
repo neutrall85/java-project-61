@@ -3,19 +3,19 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Calc {
-    private static final int limit = 10;
-    private static final int operatorLimit = 3;
-    private static final String[] operations = {"+", "-", "*"};
+    private static final int LIMIT = 10;
+    private static final int OPERATOR_LIMIT = 3;
+    private static final String[] OPERATIONS = {"+", "-", "*"};
 
     public static void calc() {
-        var questionsAnswers = new String[Engine.rounds][Engine.columns];
+        var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
 
-        for (int i = 0; i < Engine.rounds; i++) {
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             var rand = new Random();
-            var firstNumber = rand.nextInt(limit);
-            var secondNumber = rand.nextInt(limit);
-            var operator = rand.nextInt(operatorLimit);
-            questionsAnswers[i] = new String[]{firstNumber + " " + operations[operator]
+            var firstNumber = rand.nextInt(LIMIT);
+            var secondNumber = rand.nextInt(LIMIT);
+            var operator = rand.nextInt(OPERATOR_LIMIT);
+            questionsAnswers[i] = new String[]{firstNumber + " " + OPERATIONS[operator]
                     + " " + secondNumber, Integer.toString(calculate(firstNumber, operator, secondNumber))};
         }
         String rules = "What is the result of the expression?";
@@ -26,15 +26,15 @@ public class Calc {
 
         switch (operator) {
             case 0:
-                operations[operator] = "+";
+                OPERATIONS[operator] = "+";
                 result = firstNumber + secondNumber;
                 break;
             case 1:
-                operations[operator] = "-";
+                OPERATIONS[operator] = "-";
                 result = firstNumber - secondNumber;
                 break;
             case 2:
-                operations[operator] = "*";
+                OPERATIONS[operator] = "*";
                 result = firstNumber * secondNumber;
                 break;
             default:

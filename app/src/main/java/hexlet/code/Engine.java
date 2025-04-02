@@ -2,8 +2,8 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static int rounds = 3;
-    public static int columns = 2;
+    public static final int ROUNDS = 3;
+    public static final int COLUMNS = 2;
 
     public static void common(String rules, String[][] table) {
         System.out.print("May I have your name? ");

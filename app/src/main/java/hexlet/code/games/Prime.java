@@ -4,18 +4,18 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Prime {
-    public static String yes = "yes";
-    public static String no = "no";
-    public static int limit = 100;
+    private static final String YES = "yes";
+    private static final String NO = "no";
+    private static final int LIMIT = 100;
 
     public static void prime() {
-        String[][] questionsAnswers = new String[Engine.rounds][Engine.columns];
-        for (int i = 0; i < Engine.rounds; i++) {
-            int number = new Random().nextInt(limit) + 1;
+        String[][] questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            int number = new Random().nextInt(LIMIT) + 1;
             if (isPrime(number)) {
-                questionsAnswers[i] = new String[]{Integer.toString(number), no};
+                questionsAnswers[i] = new String[]{Integer.toString(number), NO};
             } else {
-                questionsAnswers[i] = new String[]{Integer.toString(number), yes};
+                questionsAnswers[i] = new String[]{Integer.toString(number), YES};
             }
         }
         String rules = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";

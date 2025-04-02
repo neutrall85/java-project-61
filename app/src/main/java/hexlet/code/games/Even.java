@@ -3,17 +3,18 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Even {
-    public static String yes = "yes";
-    public static String no = "no";
-    public static int limit = 100;
+    private static final String YES = "yes";
+    private static final String NO = "no";
+    private static final int LIMIT = 100;
+
     public static void even() {
-        var questionsAnswers = new String[Engine.rounds][Engine.columns];
-        for (int i = 0; i < Engine.rounds; i++) {
-            var number = new Random().nextInt(limit);
+        var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
+            var number = new Random().nextInt(LIMIT);
             if (number % 2 == 0) {
-                questionsAnswers[i] = new String[]{Integer.toString(number), yes};
+                questionsAnswers[i] = new String[]{Integer.toString(number), YES};
             } else {
-                questionsAnswers[i] = new String[]{Integer.toString(number), no};
+                questionsAnswers[i] = new String[]{Integer.toString(number), NO};
             }
         }
         String rules = "Answer 'yes' if the number is even, otherwise answer 'no'.";

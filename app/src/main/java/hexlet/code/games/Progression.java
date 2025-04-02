@@ -4,18 +4,18 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Progression {
-    public static int arrLength = 10;
-    public static int limit = 100;
+    private static final int ARR_LENGTH = 10;
+    private static final int LIMIT = 100;
 
     public static void progression() {
 
-        String[][] questionsAnswers = new String[Engine.rounds][Engine.columns];
-        for (int i = 0; i < Engine.rounds; i++) {
+        String[][] questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             var rand = new Random();
-            var index = rand.nextInt(arrLength);
-            var firstNumber = rand.nextInt(limit);
-            var progression = new int[arrLength];
-            var progressionStep = rand.nextInt(arrLength);
+            var index = rand.nextInt(ARR_LENGTH);
+            var firstNumber = rand.nextInt(LIMIT);
+            var progression = new int[ARR_LENGTH];
+            var progressionStep = rand.nextInt(ARR_LENGTH);
 
             for (int j = 0; j < progression.length; j++) {
                 progression[j] = firstNumber;

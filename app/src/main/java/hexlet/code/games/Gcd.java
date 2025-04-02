@@ -3,14 +3,14 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Gcd {
-    public static int limit = 100;
+    private static final int LIMIT = 100;
 
     public static void gcd() {
-        var questionsAnswers = new String[Engine.rounds][Engine.columns];
-        for (int i = 0; i < Engine.rounds; i++) {
+        var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
+        for (int i = 0; i < Engine.ROUNDS; i++) {
             var rand = new Random();
-            var firstNumber = rand.nextInt(limit) + 1;
-            var secondNumber = rand.nextInt(limit) + 1;
+            var firstNumber = rand.nextInt(LIMIT) + 1;
+            var secondNumber = rand.nextInt(LIMIT) + 1;
             questionsAnswers[i] = new String[]{firstNumber
                     + " " + secondNumber, Integer.toString(findGcd(firstNumber, secondNumber))};
         }
