@@ -7,7 +7,7 @@ public class Even {
     private static final String NO = "no";
     private static final int LIMIT = 100;
     private static final Random RAND = new Random();
-    private static final String rules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    private static final String RULES = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
     public static void playEven() {
         var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
@@ -19,6 +19,6 @@ public class Even {
                 questionsAnswers[i] = new String[]{Integer.toString(number), NO};
             }
         }
-        Engine.common(rules, questionsAnswers);
+        Engine.common(RULES, questionsAnswers);
     }
 }

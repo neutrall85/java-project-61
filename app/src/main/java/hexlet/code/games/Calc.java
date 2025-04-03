@@ -7,7 +7,7 @@ public class Calc {
     private static final int OPERATOR_LIMIT = 3;
     private static final String[] OPERATIONS = {"+", "-", "*"};
     private static final Random RAND = new Random();
-    private static final String rules = "What is the result of the expression?";
+    private static final String RULES = "What is the result of the expression?";
 
     public static void playCalc() {
         var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
@@ -20,7 +20,7 @@ public class Calc {
             var answer = Integer.toString(calculate(firstNumber, operator, secondNumber));
             questionsAnswers[i] = new String[]{firstNumber + " " + op + " " + secondNumber, answer};
         }
-        Engine.common(rules, questionsAnswers);
+        Engine.common(RULES, questionsAnswers);
     }
     public static int calculate(int firstNumber, int operator, int secondNumber) {
         int result;

@@ -5,7 +5,7 @@ import java.util.Random;
 public class Gcd {
     private static final int LIMIT = 100;
     private static final Random RAND = new Random();
-    private static final String rules = "Find the greatest common divisor of given numbers.";
+    private static final String RULES = "Find the greatest common divisor of given numbers.";
 
     public static void playGcd() {
         var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
@@ -15,7 +15,7 @@ public class Gcd {
             questionsAnswers[i] = new String[]{firstNumber
                     + " " + secondNumber, Integer.toString(findGcd(firstNumber, secondNumber))};
         }
-        Engine.common(rules, questionsAnswers);
+        Engine.common(RULES, questionsAnswers);
     }
     public static int findGcd(int firstNumber, int secondNumber) {
 

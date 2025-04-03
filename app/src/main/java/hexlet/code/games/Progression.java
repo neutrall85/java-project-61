@@ -6,7 +6,7 @@ public class Progression {
     private static final int ARR_LENGTH = 10;
     private static final int LIMIT = 100;
     private static final Random RAND = new Random();
-    private static final String rules = "What number is missing in the progression?";
+    private static final String RULES = "What number is missing in the progression?";
 
     public static void playProgression() {
 
@@ -24,7 +24,7 @@ public class Progression {
             questionsAnswers[i] = new String[]{progress(progression, index),
                     Integer.toString(progression[index])};
         }
-        Engine.common(rules, questionsAnswers);
+        Engine.common(RULES, questionsAnswers);
     }
 
     public static String progress(int[] progression, int index) {
