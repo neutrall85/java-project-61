@@ -7,22 +7,23 @@ public class Calc {
     private static final int OPERATOR_LIMIT = 3;
     private static final String[] OPERATIONS = {"+", "-", "*"};
     private static final Random RAND = new Random();
+    private static final String rules = "What is the result of the expression?";
 
-    public static void calc() {
+    public static void playCalc() {
         var questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
 
         for (int i = 0; i < Engine.ROUNDS; i++) {
             var firstNumber = RAND.nextInt(LIMIT);
             var secondNumber = RAND.nextInt(LIMIT);
             var operator = RAND.nextInt(OPERATOR_LIMIT);
-            questionsAnswers[i] = new String[]{firstNumber + " " + OPERATIONS[operator]
-                    + " " + secondNumber, Integer.toString(calculate(firstNumber, operator, secondNumber))};
+            var op = OPERATIONS[operator];
+            var answer = Integer.toString(calculate(firstNumber, operator, secondNumber));
+            questionsAnswers[i] = new String[]{firstNumber + " " + op + " " + secondNumber, answer};
         }
-        String rules = "What is the result of the expression?";
         Engine.common(rules, questionsAnswers);
     }
     public static int calculate(int firstNumber, int operator, int secondNumber) {
-        int result = 0;
+        int result;
 
         switch (operator) {
             case 0:
@@ -38,7 +39,7 @@ public class Calc {
                 result = firstNumber * secondNumber;
                 break;
             default:
-                break;
+                throw new Error("Unknown state!");
         }
         return result;
     }

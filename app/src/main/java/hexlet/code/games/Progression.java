@@ -1,14 +1,14 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
-
 import java.util.Random;
 
 public class Progression {
     private static final int ARR_LENGTH = 10;
     private static final int LIMIT = 100;
     private static final Random RAND = new Random();
+    private static final String rules = "What number is missing in the progression?";
 
-    public static void progression() {
+    public static void playProgression() {
 
         String[][] questionsAnswers = new String[Engine.ROUNDS][Engine.COLUMNS];
         for (int i = 0; i < Engine.ROUNDS; i++) {
@@ -24,7 +24,6 @@ public class Progression {
             questionsAnswers[i] = new String[]{progress(progression, index),
                     Integer.toString(progression[index])};
         }
-        String rules = "What number is missing in the progression?";
         Engine.common(rules, questionsAnswers);
     }
 

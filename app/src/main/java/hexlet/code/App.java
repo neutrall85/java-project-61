@@ -34,15 +34,15 @@ public class App {
         } else if (num == CHOICE1) {
             Cli.greeting();
         } else if (num == CHOICE2) {
-            Even.even();
+            Even.playEven();
         } else if (num == CHOICE3) {
-            Calc.calc();
+            Calc.playCalc();
         } else if (num == CHOICE4) {
-            Gcd.gcd();
+            Gcd.playGcd();
         } else if (num == CHOICE5) {
-            Progression.progression();
+            Progression.playProgression();
         } else if (num == CHOICE6) {
-            Prime.prime();
+            Prime.playPrime();
         }
     }
 }
