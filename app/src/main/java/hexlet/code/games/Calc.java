@@ -39,7 +39,7 @@ public class Calc {
                 result = firstNumber * secondNumber;
                 break;
             default:
-                throw new Error("Unknown order state: '${order.state}'!");
+                throw new RuntimeException("Unknown state!");
         }
         return result;
     }
